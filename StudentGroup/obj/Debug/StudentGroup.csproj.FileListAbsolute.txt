@@ -1,0 +1,13 @@
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\obj\Debug\StudentGroup.csprojResolveAssemblyReference.cache
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\obj\Debug\StudentGroup.csproj.CoreCompileInputs.cache
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\bin\Debug\StudentGroup.exe.config
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\bin\Debug\StudentGroup.exe
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\bin\Debug\StudentGroup.pdb
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\bin\Debug\EntityFramework.dll
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\bin\Debug\EntityFramework.xml
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\bin\Debug\ru\EntityFramework.resources.dll
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\obj\Debug\StudentGroup.csproj.CopyComplete
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\obj\Debug\StudentGroup.exe
+c:\users\едиген\source\repos\StudentGroup\StudentGroup\obj\Debug\StudentGroup.pdb

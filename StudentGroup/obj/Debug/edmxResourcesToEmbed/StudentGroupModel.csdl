@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="StudentGroupModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="StudentGroupModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="StudentSet" EntityType="StudentGroupModel.Student" />
+    <EntitySet Name="GroupSet" EntityType="StudentGroupModel.Group" />
+    <AssociationSet Name="StudentGroup" Association="StudentGroupModel.StudentGroup">
+      <End Role="Student" EntitySet="StudentSet" />
+      <End Role="Group" EntitySet="GroupSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <NavigationProperty Name="Group" Relationship="StudentGroupModel.StudentGroup" FromRole="Student" ToRole="Group" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="StudentId" Type="String" Nullable="false" />
+    <NavigationProperty Name="Student" Relationship="StudentGroupModel.StudentGroup" FromRole="Group" ToRole="Student" />
+  </EntityType>
+  <Association Name="StudentGroup">
+    <End Type="StudentGroupModel.Student" Role="Student" Multiplicity="1" />
+    <End Type="StudentGroupModel.Group" Role="Group" Multiplicity="*" />
+  </Association>
+</Schema>
